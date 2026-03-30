@@ -15,8 +15,9 @@ public class PrintTheBiggestInput {
         // 3 times
         for(int i = 0; i < 3; i++) {
             
-            // Print you expect an int
-            System.out.println("Entrez un entier à comparer : ");
+            // Say you expect print n° i using formatted string
+            System.out.println(String.format("Entrez l'entier n° %s à comparer : ", i + 1));
+
             // Assign that int to 0, 1, 2 in the array
             threeIntsToCompare[i] = myIntScanner.nextInt();
 
@@ -55,7 +56,7 @@ public class PrintTheBiggestInput {
 
     public static void main(String[] args) { 
         
-        System.out.println("The biggest int you entered is " + getMaxFromArray(GetThreeUserIntInputs(args)));
+        System.out.println("Le plus grand entier renseigné est " + getMaxFromArray(GetThreeUserIntInputs(args)));
 
     }
 }

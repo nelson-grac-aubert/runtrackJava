@@ -1,3 +1,6 @@
+/* Écrire un programme java qui demande un prénom et qui répond « bonjour
+prenom » */
+
 package jour01.job01;
 import java.util.Scanner; 
 
@@ -14,6 +17,9 @@ public class Main {
         String myFirstInput = myFirstScanner.nextLine(); 
         
         System.out.println("Vous avez tapé : " + myFirstInput);
+
+        // Close the scanner object
+        myFirstScanner.close();
 
     }
 

@@ -1,3 +1,8 @@
+/* Déclarer une variable de chaque type (char, string, int, long, float, boolean)
+Afficher les valeurs stockées.
+Pour int TOTO, stockez 3.817 puis affichez la valeur de TOTO. Que
+constatez-vous ? */
+
 public class Main {
     public static void main(String[] args) {
         char myChar = 'a';

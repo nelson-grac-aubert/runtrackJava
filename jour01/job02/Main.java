@@ -15,6 +15,9 @@ public class Main {
         
         System.out.println("Bonjour " + myFirstInput);
 
+        // Close the scanner object
+        myFirstScanner.close();
+
     }
 
 }

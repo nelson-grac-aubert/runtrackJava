@@ -7,7 +7,7 @@ public class AverageOfFiveInts {
     public static int[] GetFiveUserIntInputs(String[] args) {
         
         // Declare an empty array of lenght 5
-        int[] threeIntsToCompare = new int[5];
+        int[] fiveIntsToCompare = new int[5];
 
         // Open the scanner
         Scanner myIntScanner = new Scanner (System.in);
@@ -19,7 +19,7 @@ public class AverageOfFiveInts {
             System.out.println(String.format("Entrez l'entier n° %s à comparer : ", i + 1));
 
             // Assign that int to 0, 1, 2, 3, 4 in the array
-            threeIntsToCompare[i] = myIntScanner.nextInt();
+            fiveIntsToCompare[i] = myIntScanner.nextInt();
 
         }
 
@@ -27,9 +27,9 @@ public class AverageOfFiveInts {
         myIntScanner.close();
 
         // Debug : print the array to see if its correct
-        System.out.println(Arrays.toString(threeIntsToCompare));
+        System.out.println(Arrays.toString(fiveIntsToCompare));
         // Return the array of three int inputs
-        return threeIntsToCompare;
+        return fiveIntsToCompare;
 
     }
 

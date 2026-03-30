@@ -8,7 +8,7 @@ public class SquareTheInput {
         // Initialize the scanner object to get keyboard input
         Scanner myIntScanner = new Scanner (System.in);
 
-        System.out.println("Quel est l'int dont vous voulez le carré : ");
+        System.out.println("Quel est l'entier dont vous voulez le carré : ");
 
         // Use the scanner to get 
         int myUserIntInput = myIntScanner.nextInt();

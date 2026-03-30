@@ -8,7 +8,7 @@ public class CalculateFactorialEight {
         int factor = 1; 
 
         // For every int between 2 and 8 
-        for(int i = 2; i <= 8; i++) {
+        for(byte i = 2; i <= 8; i++) {
 
             // Multiply the factor and the int
             factor *= i;

@@ -27,7 +27,7 @@ public class SumOfNFirstCubes {
         int sumOfCubes = 0;
 
         // For every int between 0 and n
-        for(int i = 1; i <= n; i++) {
+        for(byte i = 1; i <= n; i++) {
 
             // Add the cube of that int to the sum
             sumOfCubes += Math.pow(i, 3);

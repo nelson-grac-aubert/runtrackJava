@@ -24,7 +24,7 @@ public class PrintMultiplicationTableOfN {
     public static void printMultiplicationTable(int n) { 
 
         // From to 10
-        for (int i = 0; i <= 10; i++) { 
+        for (byte i = 0; i <= 10; i++) { 
 
             // Print                                  i x n  =            result
             System.out.println(String.format("%s x %s = ", i, n) + i * n);

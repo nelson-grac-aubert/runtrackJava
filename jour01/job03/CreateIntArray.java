@@ -13,7 +13,7 @@ public class CreateIntArray {
         // Déclarer un array de taille n+1 car les array ne peuvent pas changer de taille
         int[] myFirstArray = new int[n+1];
 
-        for(int i = 0; i <= n; i ++) {
+        for(byte i = 0; i <= n; i ++) {
 
             // Changer les index de l'array un a un 
             myFirstArray[i] = i;

@@ -13,7 +13,7 @@ public class PrintTheBiggestInput {
         Scanner myIntScanner = new Scanner (System.in);
 
         // 3 times
-        for(int i = 0; i < 3; i++) {
+        for(byte i = 0; i < 3; i++) {
             
             // Say you expect print n° i using formatted string
             System.out.println(String.format("Entrez l'entier n° %s à comparer : ", i + 1));

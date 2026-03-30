@@ -3,7 +3,7 @@ Afficher les valeurs stockées.
 Pour int TOTO, stockez 3.817 puis affichez la valeur de TOTO. Que
 constatez-vous ? */
 
-public class DeclareVariables {
+public class DeclareAndPrintVariables {
     public static void main(String[] args) {
         char myChar = 'a';
         String myString = "merde";

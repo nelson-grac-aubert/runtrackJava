@@ -4,7 +4,7 @@ prenom » */
 package jour01.job01;
 import java.util.Scanner; 
 
-public class Main {
+public class GetKeyboardInput {
 
     public static void main(String[] args) {
 

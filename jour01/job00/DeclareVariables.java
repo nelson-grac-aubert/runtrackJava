@@ -3,14 +3,15 @@ Afficher les valeurs stockées.
 Pour int TOTO, stockez 3.817 puis affichez la valeur de TOTO. Que
 constatez-vous ? */
 
-public class Main {
+public class DeclareVariables {
     public static void main(String[] args) {
         char myChar = 'a';
         String myString = "merde";
         int myInt = 69;
-        long myLong = 92233720368547780l;
+        long myLong = 9223372036854778l;
         float myFloat = 34.67f;
         boolean maBoule = true;
+
 
         System.out.println(myChar);
         System.out.println(myString);

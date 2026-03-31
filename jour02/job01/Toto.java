@@ -20,7 +20,7 @@ class Toto {
         Toto t2 = new Toto(); 
 
         // ajouter t1.toto ou t2.toto pour debugger et avoir tx.toto = 1, car toto est lié à une instance de Toto
-        System.out.println("Toto : " + toto);
+        System.out.println("Toto : " + t1.toto);
 
     }
 

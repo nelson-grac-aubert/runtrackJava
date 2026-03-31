@@ -11,13 +11,31 @@ public class FiguresGeometriques {
     FiguresGeometriques instance. 
     */
 
-    public static class Rectangle { 
+    public static class Figure { 
+
+        protected double x; 
+        protected double y; 
+
+        Figure(double x, double y) { 
+
+            this.x = x; 
+            this.y = y;
+
+        }
+
+        public void affiche() { 
+            System.out.println(String.format("Une figure géométrique de centre (%s , %s)", this.x, this.y));
+        }
+    }
+
+    public static class Rectangle extends Figure{ 
 
         private double longueur; 
         private double largeur;
 
-        Rectangle(double lon, double lar) { 
+        Rectangle(double x, double y, double lon, double lar) { 
 
+            super(x, y);
             this.longueur = lon;
             this.largeur = lar;
 
@@ -49,24 +67,23 @@ public class FiguresGeometriques {
 
         int color; 
 
-        RectangleColore(int color, double longueur, double largeur) {
+        RectangleColore(double x, double y, int color, double longueur, double largeur) {
 
-            super(longueur, largeur);
+            super(x, y, longueur, largeur);
             this.color = color;
 
         }
 
     }
 
-    public static class Cercle { 
+    public static class Cercle extends Figure{ 
 
         private double x;
         private double y; 
         private double rayon; 
 
         Cercle(double x, double y, double rayon) { 
-            this.x = x;
-            this.y = y;
+            super(x, y);
             this.rayon = rayon; 
         }
 
@@ -108,13 +125,16 @@ public class FiguresGeometriques {
 
     public static void debugRectangle(double newLarg) { 
 
-        Rectangle monRectangle = new Rectangle(6,7); 
+        Rectangle monRectangle = new Rectangle(0,0, 6,7); 
 
         System.out.println(monRectangle.getLargeur());
         System.out.println(monRectangle.surface());
         monRectangle.setLargeur(newLarg);
         System.out.println(monRectangle.getLargeur());
         System.out.println(monRectangle.surface());
+
+        RectangleColore monRectangleColore = new RectangleColore(1, 1, 578, 12, 10);
+        monRectangleColore.affiche();
 
     }
 

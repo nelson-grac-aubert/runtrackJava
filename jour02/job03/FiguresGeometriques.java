@@ -45,6 +45,54 @@ public class FiguresGeometriques {
 
     }
 
+    public static class Cercle { 
+
+        private double x;
+        private double y; 
+        private double rayon; 
+
+        Cercle(double x, double y, double rayon) { 
+            this.x = x;
+            this.y = y;
+            this.rayon = rayon; 
+        }
+
+        public double getX() {
+            return this.x;
+        }
+
+        public double getY() {
+            return this.y;
+        }
+
+        public double getRayon() {
+            return this.rayon;
+        }
+
+        public void setX(double newX) {
+            this.x = newX;
+        }
+
+        public void setY(double newY) {
+            this.y = newY;
+        }
+
+        public void setRayon(double newRayon) {
+            this.rayon = newRayon;
+        }
+
+        public double surface() { 
+            return Math.PI * Math.pow(this.rayon, 2);
+        }
+
+        public boolean isInside(double comparedX, double comparedY) { 
+
+            double distanceBetweenPoints = Math.sqrt((Math.pow(comparedX, 2) - Math.pow(this.x, 2)) + (Math.pow(comparedY, 2) - Math.pow(this.y, 2)));
+            return distanceBetweenPoints < this.rayon;
+        }
+
+    }
+
     public static void debugRectangle(double newLarg) { 
 
         Rectangle monRectangle = new Rectangle(6,7); 
@@ -57,9 +105,26 @@ public class FiguresGeometriques {
 
     }
 
+    public static void debugCercle(double newRay) { 
+
+        Cercle monCercle = new Cercle(0,0,7); 
+
+        System.out.println(monCercle.getRayon());
+        System.out.println(monCercle.surface());
+        monCercle.setRayon(newRay);
+        System.out.println(monCercle.getRayon());
+        System.out.println(monCercle.surface());
+
+        System.out.println(monCercle.isInside(1,1));
+        System.out.println(monCercle.isInside(100,100));
+
+
+    }
+
     public static void main(String[] args) {
 
         debugRectangle(11);
+        debugCercle(10);
 
     }
 }

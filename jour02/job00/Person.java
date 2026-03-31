@@ -38,6 +38,7 @@ public class Person {
                             myDate, "Hyères", "Ma grosse adresse", 666);
 
         System.out.println(leGrosNelson);
+        System.out.println(leGrosNelson.adress);
 
     }
 

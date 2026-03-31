@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PrintTheBiggestInput {
 
-    public static int[] GetThreeUserIntInputs(String[] args) {
+    public static int[] GetThreeUserIntInputs() {
         
         // Declare an empty array of lenght 3
         int[] threeIntsToCompare = new int[3];
@@ -56,7 +56,7 @@ public class PrintTheBiggestInput {
 
     public static void main(String[] args) { 
         
-        System.out.println("Le plus grand entier renseigné est " + getMaxFromArray(GetThreeUserIntInputs(args)));
+        System.out.println("Le plus grand entier renseigné est " + getMaxFromArray(GetThreeUserIntInputs()));
 
     }
 }

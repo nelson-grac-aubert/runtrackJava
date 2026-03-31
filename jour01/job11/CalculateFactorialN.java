@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CalculateFactorialN {
 
-    public static int getUserIntInput(String[] args) {
+    public static int getUserIntInput() {
 
         // Initialize the scanner object to get keyboard input
         Scanner myIntScanner = new Scanner (System.in);
@@ -40,7 +40,7 @@ public class CalculateFactorialN {
 
     public static void main(String[] args) { 
 
-        int userInputInt = getUserIntInput(args);
+        int userInputInt = getUserIntInput();
         
         System.out.println(String.format("The factorial of %s is " + calculateTheFactor(userInputInt), userInputInt));
         

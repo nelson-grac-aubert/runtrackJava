@@ -2,7 +2,7 @@ package jour01.job10;
 
 public class CalculateFactorialEight {
 
-    public static int calculateTheFactor(String[] args) { 
+    public static int calculateTheFactor() { 
 
         // Initialize a factor at 1
         int factor = 1; 
@@ -21,7 +21,7 @@ public class CalculateFactorialEight {
 
     public static void main(String[] args) { 
 
-        System.out.println("The factorial of 8 is " + calculateTheFactor(args));
+        System.out.println("The factorial of 8 is " + calculateTheFactor());
         
     }
 }

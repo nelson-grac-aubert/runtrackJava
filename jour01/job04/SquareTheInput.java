@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class SquareTheInput {
 
-    public static int getUserIntInput(String[] args) {
+    public static int getUserIntInput() {
 
         // Initialize the scanner object to get keyboard input
         Scanner myIntScanner = new Scanner (System.in);
@@ -23,7 +23,7 @@ public class SquareTheInput {
     public static void main(String[] args) {
 
         // Print the square of the user input using Math.pow(chiffre x a eveler, a la puissance y)
-        System.out.println(Math.pow(getUserIntInput(null), 2));
+        System.out.println(Math.pow(getUserIntInput(), 2));
 
     }
 }

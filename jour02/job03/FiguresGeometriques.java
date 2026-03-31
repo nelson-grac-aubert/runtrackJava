@@ -45,6 +45,19 @@ public class FiguresGeometriques {
 
     }
 
+    public static class RectangleColore extends Rectangle { 
+
+        int color; 
+
+        RectangleColore(int color, double longueur, double largeur) {
+
+            super(longueur, largeur);
+            this.color = color;
+
+        }
+
+    }
+
     public static class Cercle { 
 
         private double x;

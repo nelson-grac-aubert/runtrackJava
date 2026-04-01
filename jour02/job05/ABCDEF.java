@@ -1,7 +1,5 @@
 package jour02.job05;
 
-import java.util.ArrayList;
-
 public class ABCDEF {
 
     static class A {

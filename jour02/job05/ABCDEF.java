@@ -77,7 +77,7 @@ public class ABCDEF {
         as[6] = new B();
 
         rechercher(as); // Print 3 car 2 elements de type B et un de type C qui est un B 
-        additionner(as); // Print 6 car total des d de l'array est 7 : 2 et 4 en paramètres dans les D, et 1 par défaut dans E
+        additionner(as); // Print 7 car total des d de l'array est 7 : 2 et 4 en paramètres dans les D, et 1 par défaut dans E
                          // qui est un D lol 
 
     }

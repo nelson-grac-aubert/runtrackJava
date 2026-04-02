@@ -1,10 +1,12 @@
 package jour04.job02;
+import java.io.FileWriter;
+import java.io.IOException;
+
 import java.util.Random;
 import java.util.Scanner;
-import java.io.FileWriter;   // Import the FileWriter class
-import java.io.IOException;  // Import the IOException class
 
-public class OutputAThousandMilesVanessaCarlton {
+
+public class OutputAThousandCharsVanessaCarlton {
 
     public static int getUserInput() { 
 
@@ -38,7 +40,7 @@ public class OutputAThousandMilesVanessaCarlton {
 
         String theLongAssString = ""; 
 
-        for(int i =0; i <= longAssStringLenght; i++) { 
+        for(int i =0; i < longAssStringLenght; i++) { 
 
             theLongAssString += generateARandomCharacter();
 
@@ -71,16 +73,19 @@ public class OutputAThousandMilesVanessaCarlton {
 
     public static void main(String[] args) { 
 
+        // Get User input
         int stringLenght = getUserInput();
 
-        // Get time stamp
+        // Get start time stamp
         long start = System.currentTimeMillis();
 
+        // Generate the string
         String theString = generateTheLongAssString(stringLenght);
 
+        // Write the string using the output stream
         outputTheLongAssStringIntoAFatAssTextFile(theString);
 
-        // Get time stamp
+        // Get stop time stamp
         long stop = System.currentTimeMillis();
 
         // Print execution duration
@@ -89,7 +94,8 @@ public class OutputAThousandMilesVanessaCarlton {
     }
 }
 
-/*
+/* WITHOUT AN OUTPUT STREAM
+
 How long do you want the string to be bitch? 
 456789
 Successfully wrote to the file.

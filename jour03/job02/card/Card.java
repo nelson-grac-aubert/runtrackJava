@@ -1,4 +1,4 @@
-package jour03.job02.carte;
+package jour03.job02.card;
 
 public abstract class Card {
 

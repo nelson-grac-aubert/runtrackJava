@@ -1,6 +1,6 @@
-package jour03.job02.carte.spell;
+package jour03.job02.card.spell;
 
-import jour03.job02.carte.Card;
+import jour03.job02.card.Card;
 
 public class Spell extends Card {
 

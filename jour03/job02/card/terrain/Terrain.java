@@ -1,8 +1,8 @@
-package jour03.job02.carte.terrain;
+package jour03.job02.card.terrain;
 
 import java.util.Arrays;
 
-import jour03.job02.carte.Card;
+import jour03.job02.card.Card;
 
 public class Terrain extends Card {
 

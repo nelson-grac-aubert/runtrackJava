@@ -1,6 +1,6 @@
-package jour03.job02.carte.creature;
+package jour03.job02.card.creature;
 
-import jour03.job02.carte.Card;
+import jour03.job02.card.Card;
 
 public class Creature extends Card {
 

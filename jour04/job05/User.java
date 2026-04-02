@@ -1,4 +1,4 @@
-package jour04.job04;
+package jour04.job05;
 
 import java.util.Scanner;
 

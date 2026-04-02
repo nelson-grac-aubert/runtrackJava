@@ -1,0 +1,25 @@
+package jour04.job04;
+
+import java.util.Scanner;
+
+public abstract class User {
+
+    public static int getUserInput() { 
+
+        // Init Scanner
+        Scanner intScanner = new Scanner(System.in); 
+
+        // User print
+        System.out.println("How far must the program count? ");
+
+        // Get int
+        int stringLenght = intScanner.nextInt();
+
+        // Manually cloe the scanner
+        intScanner.close();
+
+        return stringLenght;
+
+    }
+
+}

@@ -14,17 +14,4 @@ public class Game {
         return this.deck;
     }
 
-    byte findFirstAvailableSlot() {
-
-        for(int i = 0; i <= 10; i++) {
-
-            if(this.getDeck()[i] != null) {
-
-                return (byte)i;
-
-            }
-
-        }
-    }
-
 }

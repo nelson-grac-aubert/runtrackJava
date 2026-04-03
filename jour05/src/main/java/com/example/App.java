@@ -3,35 +3,51 @@ package com.example;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class App extends Application {
 
-    @Override
-    public void start(Stage primaryStage) {
-        // Create a simple label with "Hello, World!"
-        Label helloLabel = new Label("Hello, World!");
+    // launch the application
+    public void start(Stage stage)
+    {
 
-        // Use a StackPane to center the label in the window
-        StackPane root = new StackPane();
-        root.getChildren().add(helloLabel);
+        try {
 
-        // Create a scene with the root node and set its size
-        Scene scene = new Scene(root, 400, 200);
+            // set title for the stage
+            stage.setTitle("My First JavaFX Stage");
 
-        // Set the title of the window (stage)
-        primaryStage.setTitle("JavaFX Hello World");
+            // create a label
+            Label label = new Label("An exemple of a BorderPane");
+            // create a QuitButton
+            QuitButton quitButton = new QuitButton("Quit App");
 
-        // Attach the scene to the stage
-        primaryStage.setScene(scene);
+            // create a BorderPane with the label in the center 
+            BorderPane borderPane = new BorderPane();
+            borderPane.setCenter(label);
+            borderPane.setBottom(quitButton);
 
-        // Show the window
-        primaryStage.show();
+
+            // create a scene
+            Scene scene = new Scene(borderPane, 400, 300);
+
+            // set the scene
+            stage.setScene(scene);
+
+            stage.show();
+        }
+
+        catch (Exception e) {
+
+            System.out.println(e.getMessage());
+        }
     }
 
-    public static void main(String[] args) {
-        // Launch the JavaFX application
+    // Main Method
+    public static void main(String args[])
+    {
+
+        // launch the application
         launch(args);
     }
 }
